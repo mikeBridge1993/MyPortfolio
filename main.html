@@ -1,0 +1,180 @@
+<!doctype html>
+<html>
+    
+    
+<style>
+    *{
+        margin: 0; 
+        padding: 0;
+    }
+    
+    #myjourney img{
+        margin-top: 1%;
+        margin-left: 1%;
+    }
+    
+    #signature{
+        padding-top: 11%;
+        padding-left: 2%;
+
+    }
+    
+    html{
+       font-family: 'Roboto';
+        font-weight: 10;
+    }
+    
+    #mainnavdiv{
+    background-image: url('images/room.jpg');
+    background-size:cover;
+    background-repeat: no-repeat;
+    height:450px;
+    }
+    
+    ul li{
+        float: left;
+    }
+    ul{ 
+        margin:0;
+        margin-top:6%;
+        margin-right:5%;
+        padding:0;
+        list-style-type: none;
+        overflow: hidden;
+        float:right;
+        
+    }
+    
+    
+    ul li a{
+    color: darkgray;
+    text-decoration: none; 
+    padding: 35%;
+    }
+    
+    a:hover {
+    color: navajowhite;
+    }
+    
+    #myjourney{
+        height: 450px;
+        background-color: antiquewhite;
+        
+    }
+    
+    #servicespectrum{
+        height: 450px;
+        background-color: black;
+    }
+    
+    
+    #subservicespectrum{
+        display: flex;
+        height:450px;
+        background-color: whitesmoke;
+        text-align: center;
+        justify-content: center;
+                flex-direction:column;
+
+    }
+    
+    .flex-item{
+        flex: 1;
+        border:1px solid black;
+        border-radius: 10px;
+        color: white;
+        margin-left: 10px;
+        margin-right: 10px;
+        align-items: center;
+        display:flex;
+        flex-direction:column;
+        justify-content: center;
+        background-color: whitesmoke;
+        align-self:stretch;
+        margin-top: 20px;
+        margin-bottom: 20px;
+
+    }
+    
+   h4{
+      
+       color: darkgray;
+    }
+    
+    #myskills{
+        background-color:whitesmoke;
+    }
+    
+    #myskills img{
+        margin-top: 1%;
+        margin-left: 1%;   
+    }
+    
+</style>
+    
+<head>
+    <!-- <link rel = "stylesheet" type = "text/css" href = "style.css" />-->
+    <script src="https://use.fontawesome.com/01c711a3b9.js"></script>
+    <link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+    <script type="text/javascript" src="app.js"></script>
+</head>
+
+<header>
+    
+    <div id="mainnavdiv">
+        <ul id="mainnav">
+            <li id="mostleft"><a href="#">Profile</a></li>
+            <li><a href="#">Journey</a></li>
+            <li><a href="#">Skills</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+     <div id="signature">
+      <img src="images/signature.png">
+     </div>
+    </div>    
+</header>    
+<body>
+    
+    <div id="myjourney">
+      <img src="images/aboutme.png" height="60">  
+    </div>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+     <div id="myskills">
+      <img src="images/skills.png" height="60">
+     </div>
+    
+    <div id="servicespectrum"> 
+        
+        <div id="subservicespectrum">
+
+            <div class="flex-item"> <h4>Front-End Development</h4> 
+            <br>
+            <div>
+            <img src="images/html1.png" height="80" width="80">
+            <img src="images/css1.png" height="80" width="80">
+            <img src="images/Javascript.png" height="82" width="82">
+            
+            </div>
+        </div>
+        <div class="flex-item"><h4>Back-End Development</h4>
+            <br>
+            <div>
+           
+            </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+
+
+</html>

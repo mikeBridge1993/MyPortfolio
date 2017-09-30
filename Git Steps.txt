@@ -1,0 +1,15 @@
+Ao criar o repositório:
+
+1. Bash na pasta correcta
+2. git init
+3. git status
+4. git add .
+5. git commit -m "Commit"
+6. git remote add origin https://github.com/mikeBridge1993/.....git 
+7. git push -u origin master
+
+Depois de criado o repositório:
+1. git status
+2. git add .
+3. git commit -m "Commit"
+4. git push -u origin master
