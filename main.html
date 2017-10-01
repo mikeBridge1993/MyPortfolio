@@ -6,6 +6,8 @@
     *{
         margin: 0; 
         padding: 0;
+         font-family: 'Sofia';
+    
     }
     
     #myjourney img{
@@ -19,10 +21,7 @@
 
     }
     
-    html{
-       font-family: 'Roboto';
-        font-weight: 10;
-    }
+    
     
     #mainnavdiv{
     background-image: url('images/room.jpg');
@@ -31,10 +30,10 @@
     height:450px;
     }
     
-    ul li{
+    #mainnav li{
         float: left;
     }
-    ul{ 
+   #mainnav { 
         margin:0;
         margin-top:6%;
         margin-right:5%;
@@ -46,21 +45,60 @@
     }
     
     
-    ul li a{
+   #mainnav li a{
     color: darkgray;
     text-decoration: none; 
     padding: 35%;
     }
     
-    a:hover {
+  #mainnav a:hover {
     color: navajowhite;
     }
     
     #myjourney{
-        height: 450px;
+        height: 700px;
         background-color: antiquewhite;
-        
+       
     }
+    
+    
+    
+    #myjourneycontainer{
+        display: flex;
+        height: 600px;
+        font-size:15px;
+    }
+    .flex-itemme{
+        flex: 2;
+        border:1px solid black;
+        border-radius: 10px;
+        margin-left: 10px;
+        margin-right: 10px;
+        align-items: center;
+        display:flex;
+        flex-direction:column;
+        justify-content: center;
+        align-self:stretch;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+    
+    .flex-itemreferences{
+        flex: 1;
+        border:1px solid black;
+        border-radius: 10px;
+        margin-left: 10px;
+        margin-right: 10px;
+        align-items: center;
+        display:flex;
+        flex-direction:column;
+        justify-content: center;
+        align-self:stretch;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+    
+    
     
     #servicespectrum{
         height: 450px;
@@ -99,6 +137,7 @@
    h4{
       
        color: darkgray;
+       font-size: 21px;
     }
     
     #myskills{
@@ -110,6 +149,10 @@
         margin-left: 1%;   
     }
     
+    .nodec{
+        list-style: none;
+        
+    }
 </style>
     
 <head>
@@ -117,6 +160,7 @@
     <script src="https://use.fontawesome.com/01c711a3b9.js"></script>
     <link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
     <script type="text/javascript" src="app.js"></script>
+    <link href='https://fonts.googleapis.com/css?family=Sofia' rel='stylesheet'>
 </head>
 
 <header>
@@ -136,16 +180,64 @@
 <body>
     
     <div id="myjourney">
-      <img src="images/aboutme.png" height="60">  
+      <img src="images/aboutme.png" height="60">
+     
+     <div id="myjourneycontainer">   
+             
+     <div class="flex-itemme"> <h4>Academic Background</h4>
+         <br>
+       
+         <ul>
+             
+             <li><span style="font-weight:bold">Master's Degree in Aerospace Engineering </span>
+ </li>
+             <li class="nodec">(August 2015 - October 2016)</li>
+            <li class="nodec">Universidade de Lisboa - Instituto Superior Técnico.
+</li>
+             <li class="nodec">Average Grade: 16 out of 20.
+
+</li>
+             <li class="nodec">Master thesis subject: 
+
+</li>           <li class="nodec"> 
+             Development of a Preliminary Tool for Helicopter Design
+             </li>
+             <br>
+             
+             <li><span style="font-weight:bold">Erasmus Exchange Program in Munich, Germany </span></li>
+             <li class="nodec">(Sep 2014 - August 2015)</li>
+            <li class="nodec">Technische Universität München.</li>
+            
+         <br>
+             
+             <li><span style="font-weight:bold">Bachelor’s Degree in Aerospace Engineering</span></li>
+            <li class="nodec">(Sep 2011 - Jul 2014)</li>
+            <li class="nodec">Universidade de Lisboa - Instituto Superior Técnico.</li>
+            <li class="nodec">Average Grade: 15 out of 20.</li>
+         
+         
+         <br>
+         
+        
+             <li><span style="font-weight:bold">High School </span></li>
+             <li class="nodec">(Sep 2008 - Jul 2011)</li>
+             <li class="nodec">Escola Secundária Antero de Quental.</li>
+             <li class="nodec">Average Grade: 18 out of 20.</li>
+         </ul>
+         <br>
     </div>
+         
+         
+      <div class="flex-itemme"> <h4>Professional Experience</h4> 
+            <br>
+            </div>
+                
+     <div class="flex-itemreferences"> <h4>References</h4> 
+            <br>
+    </div>
+          </div>
     
-    
-    
-    
-    
-    
-    
-    
+    </div>
     
     
      <div id="myskills">
